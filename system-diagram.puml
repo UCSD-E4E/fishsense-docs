@@ -1,0 +1,53 @@
+@startuml System Diagram
+component "NVidia Jetson TX2" as tx2
+component "Orbitty Carrier Board" as orbitty
+component "PIO Board" as pio
+component "USB Hub" as hub
+component "SSD" as ssd
+component "Intel RealSense" as realsense
+component "Reed Switch" as reed_sw
+component "Power Switch" as power_sw
+
+tx2 -> orbitty
+orbitty -> pio
+reed_sw --> pio
+power_sw --> pio
+pio -> hub
+hub --> ssd
+hub -> realsense
+@enduml
+
+@startuml Dataflow Diagram
+component "NVidia Jetson TX2" as tx2
+component "SSD" as ssd
+component "Intel RealSense" as realsense
+
+realsense -> tx2 : librealsense2
+tx2 -> ssd : ROS Bag Format
+@enduml
+
+@startuml Wiring Diagram
+component "NVidia Jetson TX2" as tx2
+component "Orbitty Carrier Board" as orbitty
+component "PIO Board" as pio
+component "USB Hub" as hub
+component "SSD" as ssd
+component "Intel RealSense" as realsense
+component "Reed Switch" as reed_sw
+component "Power Switch" as power_sw
+component "Battery" as battery
+component "Power LED" as power_led
+component "Activity LED" as activity_led
+
+realsense -- hub : USB 3.0 C to USB 3.0 A
+ssd -- hub : USB 3.0 C to USB 3.0 A
+hub -- orbitty : USB 3.0 micro B to USB 3.0 A
+battery -- pio : XT30 to XT30
+reed_sw -- pio : Reed Switch to JST XH x2 F
+power_sw -- pio : 1/8 Spade to JST XH x2 F
+pio -- orbitty : 2 x 10 Header
+pio -- orbitty : JST XH x2 F to screw terminals
+orbitty -- tx2 : TX2 Mezzanine
+power_led -- pio : 22 AWG
+activity_led -- pio : 22 AWG
+@enduml
