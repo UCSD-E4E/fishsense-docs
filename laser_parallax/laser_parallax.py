@@ -19,8 +19,12 @@ def compute_world_point(
         focal_length_mm=camera_params[0])
     final_laser_axis = -1 * projected_point / np.linalg.norm(projected_point)
 
-    point_constant = (-1 * laser_axis[2] * laser_origin[0]) / \
-        (laser_axis[0] * final_laser_axis[2] - laser_axis[2] * final_laser_axis[0])
+    # point_constant = (-1 * laser_axis[2] * laser_origin[0]) / \
+    #     (laser_axis[0] * final_laser_axis[2] - laser_axis[2] * final_laser_axis[0])
+
+    # Least squares
+    point_constant = ((final_laser_axis.T @ laser_origin) - ((laser_axis.T @ laser_origin) * (laser_axis.T @ final_laser_axis))) / \
+                        (1 - (laser_axis.T @ final_laser_axis) ** 2)
 
     world_point = point_constant * final_laser_axis
     return world_point
