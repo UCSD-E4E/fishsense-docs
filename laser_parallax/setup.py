@@ -14,6 +14,7 @@ setup(
         'jupyter',
         'matplotlib',
         'numpy',
+        'torch'
     ],
     extras_require={
         'dev': [
