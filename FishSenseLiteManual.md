@@ -29,10 +29,11 @@ Refer to the appropriate camera's manual to make sure that the above settings ha
 ## Using the Camera
 1. Prior to use, ensure that the camera system has been properly assembled and that the laser mount is secure.
 2. Take the camera underwater and begin to flood the camera lens.
-3. Turn on laser. When laser is in use, aim it towards the center of body mass of the fish. Ensure that the laser is not being pointed directly towards a person if multiple people are present.
-4. Take pictures to collect fish data. Refer to the appropriate camera's manual for how to use the camera for taking images or video.
-5. When data collection is complete, turn off the laser.
-6. Take camera out of the water.
+3. Turn on laser. Bias the camera laser slightly to the right.
+4. When laser is in use, aim it towards the center of body mass of the fish. Ensure that the laser is not being pointed directly towards a person if multiple people are present.
+5. Take pictures to collect fish data. Refer to the appropriate camera's manual for how to use the camera for taking images or video.
+6. When data collection is complete, turn off the laser.
+7. Take camera out of the water.
 
 ## Collecting Calibration Images (for Laser and Camera)
 1.  Place the calibration board perpendicular to the optical axis of the camera to start.
