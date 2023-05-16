@@ -18,13 +18,18 @@ Aspect ratio 4000 x 3000\
 Output format If + raw\
 Still image stabilization on
 
-Refer to the appropriate camera's manual to make sure that the above settings have been set correctly.
+Refer to the appropriate camera's manual to make sure that the above settings have been set correctly. Also ensure that the camera being used has some kind of corrective optic to minimize flat port distortion.
 
-## Assembly
-1. 
+## Assembling Laser Mount
+1. Push the lower half of the mount to the end of [mounting location] with the front side (as labeled) facing in the direction of the optical axis.
+2. Tighten the screw of the lower mount until it remains stable.
+3. Place laser in mount and align the line displayed on the top half of the mount with the center of the laser.
+4. Screw the top half of the mount to the bottom half of the mount to secure the laser and complete the mount.
 
-## Disassembly
-1.
+## Disassembling Laser Mount
+1. Unscrew the upper screws on the mount as shown, and remove the laser.
+2. Remove the upper part of the mount.
+3. Loosen the center screw of the mount until the lower half of the mount can be slid out of [mounting location] to complete disassembly.
 
 ## Using the Camera
 1. Prior to use, ensure that the camera system has been properly assembled and that the laser mount is secure.
