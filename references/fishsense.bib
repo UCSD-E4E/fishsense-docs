@@ -117,7 +117,7 @@
   month     = {jun},
   publisher = {{IEEE}},
   doi       = {10.1109/cvpr.2013.323},
-  groups    = {Camera Calibration},
+  groups    = {Camera Calibration, Optics},
 }
 
 @Conference{Wong2022,
@@ -304,7 +304,19 @@
   pages     = {375--389},
   volume    = {29},
   doi       = {10.1017/s0263574710000196},
+  groups    = {Stereo Camera},
   publisher = {Cambridge University Press ({CUP})},
+}
+
+@Article{Hu2023RefractivePR,
+  author  = {Xiao Hu and F. Lauze and Kim Steenstrup Pedersen},
+  journal = {International Journal of Computer Vision},
+  title   = {Refractive Pose Refinement},
+  year    = {2023},
+  pages   = {1448-1476},
+  volume  = {131},
+  doi     = {10.1007/s11263-023-01763-4},
+  groups  = {Stereo Camera, Optics},
 }
 
 @Article{Raistrick2023,
@@ -375,7 +387,24 @@ To the best of our knowledge, this is the first study connecting image enhanceme
   url      = {https://escholarship.org/uc/item/4063t2j4},
 }
 
-@Book{,
+@Article{Amitai2022,
+  author        = {Amitai, Shlomi and Klein, Itzik and Treibitz, Tali},
+  title         = {Self-Supervised Monocular Depth Underwater},
+  year          = {2022},
+  month         = oct,
+  abstract      = {Depth estimation is critical for any robotic system. In the past years estimation of depth from monocular images have shown great improvement, however, in the underwater environment results are still lagging behind due to appearance changes caused by the medium. So far little effort has been invested on overcoming this. Moreover, underwater, there are more limitations for using high resolution depth sensors, this makes generating ground truth for learning methods another enormous obstacle. So far unsupervised methods that tried to solve this have achieved very limited success as they relied on domain transfer from dataset in air. We suggest training using subsequent frames self-supervised by a reprojection loss, as was demonstrated successfully above water. We suggest several additions to the self-supervised framework to cope with the underwater environment and achieve state-of-the-art results on a challenging forward-looking underwater dataset.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
+  doi           = {10.48550/ARXIV.2210.03206},
+  eprint        = {2210.03206},
+  file          = {:http\://arxiv.org/pdf/2210.03206v1:PDF},
+  groups        = {Monocular Depth Camera},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), Robotics (cs.RO), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@Book{Gonzalez,
   author    = {Rafael C. Gonzalez, Richard E. Woods},
   publisher = {Pearson},
   title     = {Digital Image Processing},
@@ -384,9 +413,20 @@ To the best of our knowledge, this is the first study connecting image enhanceme
   groups    = {Image Processing},
 }
 
-@Article{,
+@Book{Leibe,
+  author    = {Leibe, Bastian and Matas, Jiri and Sebe, Nicu and Welling, Max},
+  publisher = {Springer},
+  title     = {Computer Vision – ECCV 2016 14th European Conference, Amsterdam, The Netherlands, October 11–14, 2016, Proceedings, Part I},
+  isbn      = {9783319464473},
+  groups    = {Image Processing},
+  pages     = {902},
+  subtitle  = {14th European Conference, Amsterdam, The Netherlands, October 11–14, 2016, Proceedings, Part I},
+}
+
+@Article{Karaimer,
   author = {Hakki Can Karaimer, Michael S. Brown},
   title  = {A Software Platform for Manipulating the Camera Imaging Pipeline},
+  doi    = {https://doi.org/10.1007/978-3-319-46448-0_26},
   groups = {Image Processing},
 }
 
@@ -421,6 +461,7 @@ To the best of our knowledge, this is the first study connecting image enhanceme
 1 StaticGroup:Camera Calibration\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Fish Analysis\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Image Processing\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Monocular Depth Camera\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Optics\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:RealSense System\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Stereo Camera\;0\;1\;0x8a8a8aff\;\;\;;
