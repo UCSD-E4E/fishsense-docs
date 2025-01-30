@@ -113,3 +113,24 @@ The next step is to label head/tail.  In order to do so, create or use a Label S
   <Image name="img-1" value="$img"/>
 </View>
 ```
+
+## Generating Fish Lengths
+
+Now that we have everything we need, it is time to generate length data.  To do so, you will need to following information:
+
+1. Lens Calibration
+2. Laser Calibration
+3. Laser Labels
+4. Head/Tail Labels
+
+To generate length data, execute the following:
+
+```bash
+fsl process *.ORF --headtail-label-studio-json path/to/head/tail/label.json --laser-calibration fsl-01d-laser.pkg --laser-label-studio-json /path/to/laser/label.json --lens-calibration fsl-01d-lens-raw.pkg --output results.db
+```
+
+To convert this `results.db` file into a CSV, you can execute the following:
+
+```bash
+sqlite3 results.db 'select * from data' -header -csv > results.csv
+```
