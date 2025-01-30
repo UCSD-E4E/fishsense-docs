@@ -35,3 +35,41 @@ Now that you have selected your camera calibration, it is now time to rectify th
 ```bash
 fsl preprocess *.ORF --format JPG --lens-calibration fsl-01d-lens-raw.pkg --output-path laser-calibration.pkg
 ```
+
+## Label the Lasers
+
+Add the processed `JPG` files into a folder under `\\e4e-nas.ucsd.edu\label_studio`.  The folder name here should match the name of the project you will be using in Label Studio by convention.
+
+### Using an existing project
+
+If it is appropriate, you may add your images to an existing project.  After you do so, open the project's settings -> Cloud Stroage -> Click the Sync button that matches your cloud storage.
+
+### Creating a new project
+
+If it is appropriate, you may create a new project in Label Studio.  If you do, you should use the following code for your labeling interface as the CLI tools expect this structure:
+
+```xml
+<View>
+  <KeyPointLabels name="kp-1" toName="img-1">
+    <Label value="Red Laser" background="#FFA39E"/>
+    <Label value="Green Laser" background="#26a269"/>
+  </KeyPointLabels>
+  <Image name="img-1" value="$img" zoom="true" zoomControl="true"/>
+</View>
+```
+
+You can then sync this project with the Synology backend by adding a new Import Cloud Storage with the following configuration:
+
+```yml
+Storage Type: Synology
+Storage Title: your-folder-name
+URL: https://e4e-nas.ucsd.edu:6021
+Path: /label_studio/your-folder-name
+Username: label_studio
+Password: ********
+File Filter Regex: .*JPG
+Treat every bucket object as a source file: True
+
+```
+
+Click "Add Storage" to save it.  Then click the "Sync" button.  Confirm that your images have been added.
