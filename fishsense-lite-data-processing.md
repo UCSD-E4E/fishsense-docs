@@ -73,3 +73,26 @@ Treat every bucket object as a source file: True
 ```
 
 Click "Add Storage" to save it.  Then click the "Sync" button.  Confirm that your images have been added.
+
+## Laser Calibration
+
+The laser needs to be recalibrated each dive.  In order to perform this calibration, we need to have completed laser labels in the steps above.  Once complete, navigate to the Label Studio project and export the data as a `JSON`.  You will need this to perform the laser calibration.
+
+## Checkerboard Calibration
+
+In order to perform the checkerboard calibration, you will need the following information
+
+1. Lens Calibration
+2. Laser Labels
+3. The number of inside corners of your checkerboard
+4. The square size of your checkerboard
+
+With this information in hand, execute the following
+
+```bash
+fsl calibrate-laser *.ORF --lens-calibration fsl-01d-lens-raw.pkg --rows 17 --columns 24 --square-size 30 --output fsl-01d-laser.pkg --label-studio-json path/to/the/exported/label-studio.json
+```
+
+## Dive Slate Calibration
+
+TODO
