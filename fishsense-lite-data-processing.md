@@ -78,7 +78,7 @@ Click "Add Storage" to save it.  Then click the "Sync" button.  Confirm that you
 
 The laser needs to be recalibrated each dive.  In order to perform this calibration, we need to have completed laser labels in the steps above.  Once complete, navigate to the Label Studio project and export the data as a `JSON`.  You will need this to perform the laser calibration.
 
-## Checkerboard Calibration
+### Checkerboard Calibration
 
 In order to perform the checkerboard calibration, you will need the following information
 
@@ -93,6 +93,23 @@ With this information in hand, execute the following
 fsl calibrate-laser *.ORF --lens-calibration fsl-01d-lens-raw.pkg --rows 17 --columns 24 --square-size 30 --output fsl-01d-laser.pkg --label-studio-json path/to/the/exported/label-studio.json
 ```
 
-## Dive Slate Calibration
+### Dive Slate Calibration
 
 TODO
+
+## Labeling Head/Tail
+
+The next step is to label head/tail.  In order to do so, create or use a Label Studio Project per the instructions above.  Uses the following XML for your Labeling Interface:
+
+```xml
+<View>
+  <Choices name="choice" toName="img-1">
+    <Choice value="Is not a fish"/>
+  </Choices>
+  <KeyPointLabels name="kp-1" toName="img-1">
+    <Label value="Snout" background="#FFA39E"/>
+    <Label value="Fork" background="#26a269"/>
+  </KeyPointLabels>
+  <Image name="img-1" value="$img"/>
+</View>
+```
