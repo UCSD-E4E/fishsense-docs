@@ -85,7 +85,7 @@ In order to perform the checkerboard calibration, you will need the following in
 1. Lens Calibration
 2. Laser Labels
 3. The number of inside corners of your checkerboard
-4. The square size of your checkerboard
+4. The square size of your checkerboard in mm
 
 With this information in hand, execute the following
 
