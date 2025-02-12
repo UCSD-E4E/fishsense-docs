@@ -7,14 +7,14 @@ This document is intended to detail how to process data using the FishSense Lite
 Before you begin, you will need your camera number.  The following steps will be specific to a specific camera.  The FishSense Lite CLI is only supported on Ubuntu 24.04 on x86-64.
 
 ### E4E Calibration Boards
-Rows: 14
-Columns: 10
-Square Size: 41mm
+* Rows: 14
+* Columns: 10
+* Square Size: 41mm
 
 ### Calib Calibration Boards
-Rows: 17
-Columns: 24
-Square Size: 30mm
+* Rows: 17
+* Columns: 24
+* Square Size: 30mm
 
 ## Naming Conventions
 
