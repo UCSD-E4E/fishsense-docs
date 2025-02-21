@@ -2,11 +2,18 @@
 System Level Documentation for FishSense
 
 # Repositories
-## FishSense Lite
+## End User
 - https://github.com/UCSD-E4E/fishsense-lite
 - https://github.com/UCSD-E4E/fishsense-mobile
 
-# Legacy
+## Tools
+- https://github.com/UCSD-E4E/fishsense-docker
+
+## Additional Documentation
+- https://github.com/UCSD-E4E/fishsense-operations
+- https://github.com/UCSD-E4E/rust-handbook
+
+## Legacy
 - https://github.com/UCSD-E4E/FishSense
 - https://github.com/UCSD-E4E/FishSense-PIO
 - https://github.com/UCSD-E4E/fishsense-postcorrection
