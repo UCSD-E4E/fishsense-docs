@@ -24,7 +24,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 - [Styleguides](#styleguides)
   - [Commit Messages](#commit-messages)
 - [Join The Project Team](#join-the-project-team)
-
+  - [Probation Period](#probation-period)
 
 ## Code of Conduct
 
@@ -69,6 +69,7 @@ As the FishSense project is a UC San Diego project, contributors should be UC Sa
 In order to facilitate efficient project development, we ask that student contributors continually meet the following requirements:
 - Be enrolled as a student at UC San Diego.
 - Attend at least 80% of the scheduled weekly FishSense technical meetings during the past 90 days.
+- Satisfy the [FishSense Operations](https://github.com/UCSD-E4E/fishsense-operations) requirements.
 - Commit at least 3 hours a week to development efforts outside of the technical meeting.
 - Remain in contact with the team throughout the week.
 - Be committed to continuous learning and development.
@@ -153,6 +154,13 @@ Commit messages must conform to the Conventional Commit style (https://www.conve
 
 ## Join The Project Team
 Please apply to Engineers for Exploration at https://e4e.ucsd.edu/apply.
+
+### Intro Period
+Most students during the school year will join in with a intro period.  This is done so that we may offer positions to more students.  The requirements for a successful intro period are the following:
+
+* Meet the contributing guidelines above in [Contributing to FishSense](#contributing-to-fishsense).
+* Contribute a few hours a week to [labeling](https://github.com/UCSD-E4E/fishsense-docs/tree/main/labeling). Since much in this project is data dependent, this contributes greatly to the project's success.
+* Successfully complete three minor issues within the first quarter that you join. Issues of relevance will typicaly be labeled "Good first issue".  If you join within the last 4 weeks of a quarter, this will be extended to the next quarter.
 
 <!-- omit in toc -->
 ## Attribution
